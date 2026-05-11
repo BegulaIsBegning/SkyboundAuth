@@ -1,0 +1,16 @@
+# .env.example — Copy to .env and fill in values
+
+# Your Render PostgreSQL connection string
+DATABASE_URL=postgresql://user:password@host:5432/dbname
+
+# Random secret for session cookies (generate with: node -e "console.log(require('crypto').randomBytes(48).toString('hex'))")
+SESSION_SECRET=replace_with_long_random_string
+
+# Your Render deployment URL (no trailing slash)
+BASE_URL=https://skybound-auth.onrender.com
+
+# Comma-separated allowed CORS origins for the browser API
+CORS_ORIGINS=https://skybound-auth.onrender.com,http://localhost:3000
+
+NODE_ENV=production
+PORT=3000
